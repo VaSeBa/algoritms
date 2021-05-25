@@ -6,11 +6,11 @@ public class QuickSort {
     public static void main(String[] args) {
 
         int [] array = new int[] {64, 42, 73, 41, 32, 53, 16, 24, 57, 42, 74, 55, 36};
-//        System.out.println(arrayToString(array));
-//        quickSort(array, 0, array.length - 1);
+        System.out.println(arrayToString(array));
+        quickSort(array, 0, array.length - 1);
 
-        test1();
-        test2();
+//        test1();
+//        test2();
 
     }
 
@@ -20,7 +20,7 @@ public class QuickSort {
 
             int divideIndex = partition(arr, from, to);
 
-//            printSortStep(arr, from, to, divideIndex);
+            printSortStep(arr, from, to, divideIndex);
 
             quickSort(arr, from, divideIndex - 1);
 
