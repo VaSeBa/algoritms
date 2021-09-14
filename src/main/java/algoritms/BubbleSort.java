@@ -6,7 +6,7 @@ public class BubbleSort {
         printArray(array);
 
         boolean isSorted = false;
-        while (!isSorted){
+        while (!isSorted) {
             isSorted = true;
             for (int i = 1; i < array.length; i++) {
                 if (array[i] < array[i - 1]) {
