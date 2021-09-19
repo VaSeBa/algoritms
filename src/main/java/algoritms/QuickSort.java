@@ -13,7 +13,7 @@ public class QuickSort {
 
     }
 
-    public static void quickSort(int[] arr, int from, int to) {
+    public static void quickSort(int[] arr, int from, int to) { // n*log(n)
 
         if (from < to) {
 
@@ -25,7 +25,7 @@ public class QuickSort {
         }
     }
 
-    private static int partition(int[] arr, int from, int to) {
+    private static int partition(int[] arr, int from, int to) { // O(n)
         int rightIndex = to;
         int leftIndex = from;
 
@@ -76,13 +76,13 @@ public class QuickSort {
     }
 
     private static void bubbleSort(int[] arr) {
-        boolean sorted = false;
-        while (!sorted) {
-            sorted = true;
-            for (int i = 1; i < arr.length; i++) {
+        boolean isSorted = false;
+        while (!isSorted) { // O(n)
+            isSorted = true;
+            for (int i = 1; i < arr.length; i++) { // O(n)
                 if (arr[i - 1] > arr[i]) {
                     swap(arr, i - 1, i);
-                    sorted = false;
+                    isSorted = false;
                 }
             }
         }
